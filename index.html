@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmic Coffee Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+</head>
+<body>
+  <canvas id="coffee-particles"></canvas>
+  <header class="hero" data-aos="fade-down">
+    <h1>Cosmic Coffee Shop</h1>
+    <p>Ваш утренний кофе среди звёзд</p>
+  </header>
+
+  <section id="our-coffee" data-aos="fade-up">
+    <h2>Наш кофе</h2>
+    <div class="coffee-cup" id="coffee-cup"></div>
+    <p>Зёрна падают и собираются в чашку</p>
+  </section>
+
+  <section id="recipes" data-aos="fade-up">
+    <h2>Рецепты</h2>
+    <div class="ingredients" id="ingredients"></div>
+    <p>Ингредиенты прилетают и «наливаются» в кофе</p>
+  </section>
+
+  <section id="order" data-aos="fade-up">
+    <h2>Закажи</h2>
+    <form id="order-form">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <script src="node_modules/aos/dist/aos.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
